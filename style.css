@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(235, 235, 235);
+    color: #000;
+    scroll-behavior: smooth;
+  
+}
+
+header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+     position: fixed;
+     display: flex;
+    align-items: center;
+    justify-content: space-around;  
+     padding: 2rem 8rem; 
+}
+
+.logo{
+    z-index: 1000;
+    
+}
+ul {
+    display: flex; 
+ flex-direction: row; 
+ 
+}
+
+ .nav a{
+     /* width: 100%; 
+    align-items: center;  */
+    margin: 0 1.5rem; 
+    color: #000;
+    font-size: 25px; 
+    transition: all 0.6s; 
+   
+}
+
+.nav a:hover{
+    transform: translateX(-5px);
+}
+
+.main-content{
+
+    width: 100%;
+    height: 140%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+     align-items: center;  
+     gap: 1rem;
+     padding: 2rem 5rem 0 18rem;
+   
+}
+
+.profile img{
+    width: 100%; 
+     height: auto; 
+     border: 1px solid white;
+     margin-top: 3rem;
+}
+  .text h3, h2{
+font-size: 3rem;
+font-weight:300;
+margin-bottom: 0;
+
+}
+
+.personal-folder{
+  
+    /* margin-bottom: 1rem; */
+    font-weight:bold;
+}
+
+
+
+
+
+
+ @media screen and (max-width:999px){
+  
+    .main-content{
+
+        width: 100%;
+        height: 140%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+         align-items: center;  
+         justify-content: center;
+         /* gap: 1rem; */
+      
+          margin: 0 2.2rem; 
+       
+    }
+    
+    .profile img{
+        width: 100%; 
+         height: auto; 
+         margin-top: 2rem;
+    }
+      .text h3, h2{
+   
+    
+    margin-bottom: 0;
+    
+    }
+    
+    .personal-folder{
+      
+        /* margin-bottom: 1rem; */
+     
+    }
+
+    header{
+ 
+         position: fixed;
+         padding: 2rem 0; 
+        
+    }
+    .logo{
+ font-size: 10px;
+ font-weight: none;
+    
+    }
+    
+     .nav a{
+          width: 100%; 
+        align-items: center;  
+        gap: 2rem;
+         margin: 0 0;  
+         padding: 0 1rem;
+        color: #000;
+        font-size: 18px; 
+        transition: all 0.6s; 
+       
+    }
+ 
+
+
+  }  
+
+  @media screen and (max-width:768px){
+    .main-content{
+        width: 100%;
+        height: 140%;
+         padding: 2rem 5rem 0 1rem;
+         display: flex;
+         align-items: center; 
+         justify-content: center;
+         margin: 0 2.1rem; 
+    }
+    
+.profile img{
+    width: 199px;
+    height: auto;
+    border-radius: 50px;
+     margin-bottom: 2rem; 
+}
+.text h3, h2{
+    font-size: 2rem;
+    font-weight:100;
+    margin-bottom: 1rem;
+    
+    }
+    .personal-folder{
+        font-size: 1.5rem;
+      
+    }
+  }  
+
+  @media screen and (max-width:884px){
+    
+    .main-content{
+        width: 100%;
+        height: 100vh;
+         padding: 2rem 5rem 0 1rem;
+         display: flex;
+         align-items: center; 
+         justify-content: center;
+    }
+    
+.profile img{
+    width: 199px;
+    height: auto;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+}
+.text h3, h2{
+    font-size: 2rem;
+    font-weight:100;
+    margin-bottom: 1rem;
+    
+    }
+    .personal-folder{
+        font-size: 1.5rem;
+      
+    }
+  }    
+
+  @media screen and (max-width:360px){
+    
+    .main-content{
+        width: 100%;
+        height: 100vh;
+         padding: 2rem 5rem 0 1rem;
+         display: flex;
+         align-items: center; 
+         justify-content: center;
+         margin: 2rem 0 0 3rem; 
+         
+       
+    }
+    
+.profile img{
+    width: 199px;
+    height: auto;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+}
+.text h3, h2{
+    font-size: 2rem;
+    font-weight:100;
+    margin-bottom: 1rem;
+    
+    }
+    .personal-folder{
+        font-size: 1.5rem;
+      
+    }
+  }    
+
+
+
